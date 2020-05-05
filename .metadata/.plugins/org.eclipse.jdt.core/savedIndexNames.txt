@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+G:\Meu Drive\Estudos\Programação\PráticadeProgramação\Java\Repositórios Github\Treinamento-Java-POO\.metadata\.plugins\org.eclipse.jdt.core
+527597238.index
+2103231971.index
