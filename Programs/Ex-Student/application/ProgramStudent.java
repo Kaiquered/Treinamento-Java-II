@@ -3,7 +3,7 @@ package application;
 import java.util.Scanner;
 import entities.Student;
 
-/* Programa calcula o resultado final de um aluno sem encapsulamento. 
+/* Programa calcula o resultado final de um aluno. 
  * É aprovado o aluno que obtém uma note maior ou igual a 60 pontos.
  * notes máximas: 1º prova (30 pontos), 2º e 3º prova (35 pontos).  
  */
