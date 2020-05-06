@@ -27,7 +27,7 @@ public class ProgramStudent {
 			System.out.printf("note final= %.2f points\n", student.noteFinal());
 
 			if (student.noteFinal() >= 60)
-				System.out.println("Success!");
+				System.out.println("Passed!");
 			else {
 				System.out.println("Failed!");
 				System.out.printf("Missing= %.2f points ", student.result());
