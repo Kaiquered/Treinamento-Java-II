@@ -1,0 +1,43 @@
+package application;
+
+import java.util.Scanner;
+import entities.Aluno;
+
+/* Programa que lê as três notas de um aluno e calcula o resultado final do semestre.
+ * É aprovado o aluno que obtém uma nota maior ou igual a 60 pontos.
+ * Notas máximas: 1º prova (30 pontos), 2º e 3º prova (35 pontos). 
+ */
+public class Program7 {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+
+		Aluno estudante = new Aluno();
+
+		System.out.println("Digite o nome do aluno: ");
+		estudante.nome = input.nextLine();
+		System.out.println("Digite as notas do Aluno: ");
+		estudante.nota1 = input.nextFloat();
+		estudante.nota2 = input.nextFloat();
+		estudante.nota3 = input.nextFloat();
+
+		if (estudante.nota1 <= 30 && estudante.nota2 <= 35 && estudante.nota3 <= 35) {
+
+			System.out.printf("Nota final= %.2f\n", estudante.notaFinal());
+
+			if (estudante.notaFinal() >= 60)
+				System.out.println("Aprovado!");
+			else {
+				System.out.println("Recuperação!");
+				System.out.printf("Faltam= %.2f pontos ", estudante.resultado());
+			}
+		}
+		
+		else
+			System.out.println("Digite valores válidos!");
+
+		input.close();
+
+	}
+}

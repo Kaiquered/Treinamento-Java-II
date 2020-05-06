@@ -1,0 +1,43 @@
+package application;
+
+import java.util.Scanner;
+import entities.Student;
+
+/* Programa calcula o resultado final de um aluno sem encapsulamento. 
+ * É aprovado o aluno que obtém uma nota maior ou igual a 60 pontos.
+ * Notas máximas: 1º prova (30 pontos), 2º e 3º prova (35 pontos).  
+ */
+public class ProgramStudent {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+
+		Student student = new Student();
+
+		System.out.println("Digite o nome do aluno: ");
+		student.nome = input.nextLine();
+		System.out.println("Digite as notas do Aluno: ");
+		student.nota1 = input.nextFloat();
+		student.nota2 = input.nextFloat();
+		student.nota3 = input.nextFloat();
+
+		if (student.nota1 <= 30 && student.nota2 <= 35 && student.nota3 <= 35) {
+
+			System.out.printf("Nota final= %.2f\n", student.notaFinal());
+
+			if (student.notaFinal() >= 60)
+				System.out.println("Aprovado!");
+			else {
+				System.out.println("Recuperação!");
+				System.out.printf("Faltam= %.2f pontos ", student.resultado());
+			}
+		}
+		
+		else
+			System.out.println("Digite valores válidos!");
+
+		input.close();
+
+	}
+}
