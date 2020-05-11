@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import entities.Account1;
 
-// Programa Conta bancária com as opções de deposito inicial e saque com uma taxa de $ 5.00.
+// Programa Conta bancária com as opções de depósito inicial, depósito e saque com uma taxa de $ 5.00.
 
 
 public class ProgramAccount1 {

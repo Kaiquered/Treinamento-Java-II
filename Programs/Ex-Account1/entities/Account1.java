@@ -7,21 +7,21 @@ public class Account1 {
 	private double balance;
 
 	public Account1() {
-		
+
 	}
-			
-	public Account1(int number , String name) {
+
+	public Account1(int number, String name) {
 		this.number = number;
 		this.name = name;
 	}
-	
+
 	public Account1(int number, String name, double value_deposit) {
 		this.number = number;
 		this.name = name;
 		deposit(value_deposit);
-		
+
 	}
-	
+
 	public int getNumber() {
 		return number;
 	}
@@ -45,17 +45,10 @@ public class Account1 {
 	public void withdraw(double value_withdraw) {
 		balance -= value_withdraw + 5;
 	}
-	
+
 	public String toString() {
-		return "Account: "
-	           + number
-			   + ", "
-			   + "Holder: "
-			   + name 
-			   + ", "
-		       + "Balance: $"
-		       + balance;
-			  
+		return "Account: " + number + ", " + "Holder: " + name + ", " + "Balance: $" + balance;
+
 	}
 
 }
