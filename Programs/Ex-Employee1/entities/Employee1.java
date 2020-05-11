@@ -7,13 +7,11 @@ public class Employee1 {
 	public double tax;
 	
 	public double netSalary() {
-		
 		return grossSalary-tax;
 	}
 	
 	public double increaseSalary(double percentage) {
-		
-		return netSalary() + grossSalary * percentage;
+		return netSalary() + grossSalary * (percentage/100);
 	}
 	
 }
